@@ -38,6 +38,20 @@ body {
   .div2--a:hover{
     background-color: rgb(1, 105, 240);
   }
+  .menu--boton{
+    height: 50px;
+    width: 50px;
+    background-image: url(/Icons/menus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: rgb(216, 62, 62);
+    display: none;
+  }
+  
   
 
 
@@ -111,9 +125,13 @@ body {
 
 
 //Realizando la parte de my skills
+.myskills--h{
+  margin-top: 100px;
+  text-align: center;
+}
 .MySkills{
   width: 100%;
-  height: 400px;
+  height: max-content;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50% 50%;
@@ -121,7 +139,112 @@ body {
 .myskill--div{
   height: 180px;
   width: 200px;
-  background-color: red;
   align-self: center;
   margin: auto;
+}
+.myskill--div1{
+  background-image: url(/Icons/html.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div2{
+  background-image: url(/Icons/css.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div3{
+  background-image: url(/Icons/js.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div4{
+  background-image: url(/Icons/mysql.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div5{
+  background-image: url(/Icons/git.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div6{
+  background-image: url(/Icons/java.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div7{
+  background-image: url(/Icons/java.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div8{
+  background-image: url(/Icons/java.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.myskill--div9{
+  background-image: url(/Icons/java.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.soon{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(75, 75, 75);
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.soon h2{
+  font-size: x-large;
+  color: black;
+  opacity: 1;
+}
+
+
+
+
+
+//Realizando la parte de proyectos
+.myprojects{
+  margin-top: 100px;
+  width: 100%;
+  height: max-content;
+}
+.myprojects h2{
+  text-align: center;
+}
+.grid--myprojects{
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 50% 50%;
+}
+.myprojects--div{
+  background-color: aqua;
+  height: 200px;
+  width: 400px;
+  margin: 3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+//Para el mobile
+@media screen and (max-width:"730px") {
+  .menu--boton{
+    display: block;
+  }
+  .nav--div2{
+    display: none;
+  }
 }
