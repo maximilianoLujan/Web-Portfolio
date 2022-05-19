@@ -119,16 +119,17 @@ body {
 
 .txt {
   height: 300px;
-  width: 80%;
+  width: 90%;
   background-color: aqua;
   margin: auto;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .cv {
-  width: 80%;
+  width: 40%;
   height: 80px;
   background-color: aqua;
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -138,6 +139,71 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.encontrame {
+  width: 60%;
+  background-color: aquamarine;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.parrafo-encontrame {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.links {
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  border: none;
+  background-color: aquamarine;
+  cursor: pointer;
+}
+
+.Instagram {
+  background-image: url(/Icons/instagram.png);
+  background-repeat: no-repeat;
+}
+
+.twitter {
+  background-image: url(/Icons/twitter.png);
+  background-repeat: no-repeat;
+}
+
+.github {
+  background-image: url(/Icons/github.png);
+  background-repeat: no-repeat;
+}
+
+.linkedln {
+  background-image: url(/Icons/linkedin.png);
+  background-repeat: no-repeat;
+}
+
+.cv-encontrame {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .cv button {
@@ -222,19 +288,19 @@ body {
 }
 
 .myskill--div7 {
-  background-image: url(/Icons/java.png);
+  background-image: url(/Icons/react.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .myskill--div8 {
-  background-image: url(/Icons/java.png);
+  background-image: url(/Icons/nodejs.png);
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .myskill--div9 {
-  background-image: url(/Icons/java.png);
+  background-image: url(/Icons/react.png);
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -296,6 +362,21 @@ body {
   }
   .nav--div2 {
     display: none;
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .main--img {
+    width: 100%;
+  }
+  .main--txt {
+    width: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
