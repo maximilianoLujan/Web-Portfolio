@@ -181,6 +181,7 @@ body {
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 50% 50%;
+  align-content: center;
 }
 .myskill--div{
   height: 180px;
@@ -269,11 +270,25 @@ body {
 }
 .myprojects--div{
   background-color: aqua;
-  height: 200px;
-  width: 400px;
+  height: max-content;
+  width: max-content;
   margin: 3px;
 }
-
+.proyecto1{
+  position: relative;
+}
+.proyecto1--img{
+}
+.proyecto1--a{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius:  10px; ;
+}
 
 
 

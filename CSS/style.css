@@ -240,6 +240,8 @@ body {
       grid-template-columns: 33% 33% 33%;
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .myskill--div {
@@ -351,9 +353,28 @@ body {
 
 .myprojects--div {
   background-color: aqua;
-  height: 200px;
-  width: 400px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 3px;
+}
+
+.proyecto1 {
+  position: relative;
+}
+
+.proyecto1--a {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: blue;
+  text-decoration: none;
+  color: white;
+  padding: 5px;
+  border-radius: 10px;
 }
 
 @media screen and (max-width: 730px) {
