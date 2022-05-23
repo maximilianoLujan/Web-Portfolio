@@ -225,7 +225,7 @@ body {
 }
 
 .myskills--h {
-  margin-top: 100px;
+  margin-top: 50px;
   text-align: center;
 }
 
@@ -331,7 +331,7 @@ body {
 }
 
 .myprojects {
-  margin-top: 100px;
+  margin-top: 50px;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -377,9 +377,99 @@ body {
   border-radius: 10px;
 }
 
+.contactme {
+  width: 100%;
+  height: 400px;
+  background-color: aqua;
+}
+
+.contactme--h3 {
+  margin: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+input {
+  border-radius: 20px;
+  border: none;
+  height: 40px;
+}
+
+.input {
+  width: 40%;
+}
+
+.input--leave {
+  width: 70%;
+  margin-top: 20px;
+  height: 60px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.input--send {
+  width: 100px;
+  height: 40px;
+  margin: 20px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.input--send:hover {
+  cursor: pointer;
+  color: #a7a7a7;
+}
+
+.div--input {
+  width: 80%;
+  margin: 20px;
+  -ms-flex-item-align: center;
+      align-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+.footer {
+  width: 100%;
+  height: 50px;
+  background-color: grey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer--h5 {
+  text-align: center;
+}
+
 @media screen and (max-width: 730px) {
   .menu--boton {
     display: block;
+  }
+  .img {
+    height: 300px;
+    width: 300px;
+    margin-top: 5px;
+    margin-bottom: 5px;
   }
   .nav--div2 {
     display: none;
