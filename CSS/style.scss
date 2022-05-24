@@ -281,6 +281,42 @@ body {
 .proyecto1{
   position: relative;
 }
+.proyecto1--op{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition-duration: 1.5s;
+}
+.proyecto1--op p{
+  color: aliceblue;
+  padding: 20px;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+
+}
+.proyecto1--op:hover{
+  opacity: 0.9;
+}
+.proyecto2--op{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition-duration: 1.5s;
+}
+.proyecto2--op p{
+  color: aliceblue;
+  padding: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+.proyecto2--op:hover{
+  opacity: 0.9;
+}
 .proyecto1--a{
   position: absolute;
   right: 10px;
@@ -291,7 +327,10 @@ body {
   padding: 5px;
   border-radius:  10px; ;
 }
-
+.proyecto2--img{
+  width:378px;
+  height:140px;
+}
 
 
 
