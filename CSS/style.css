@@ -225,8 +225,9 @@ body {
 }
 
 .myskills--h {
-  margin-top: 50px;
+  margin-top: 20px;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .MySkills {
@@ -238,10 +239,11 @@ body {
   display: grid;
   -ms-grid-columns: 33% 33% 33%;
       grid-template-columns: 33% 33% 33%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  -ms-grid-rows: 200px 200px;
+      grid-template-rows: 200px 200px;
   -ms-flex-line-pack: center;
       align-content: center;
+  margin-top: 20px;
 }
 
 .myskill--div {
@@ -301,37 +303,41 @@ body {
   background-position: center;
 }
 
-.myskill--div9 {
+/*.myskill--div9{
   background-image: url(../Icons/react.png);
   background-repeat: no-repeat;
   background-position: center;
+}*/
+.myskill--div7, .myskill--div8, .myskill--div9 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .soon {
-  width: 100%;
-  height: 100%;
+  width: 170px;
+  height: 180px;
   background-color: #4b4b4b;
-  opacity: 0.7;
+  opacity: 0.9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border-radius: 20px;
 }
 
 .soon h2 {
   font-size: x-large;
   color: black;
-  opacity: 1;
+  opacity: 10;
 }
 
 .myprojects {
-  margin-top: 50px;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -461,7 +467,7 @@ input {
   text-align: center;
 }
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 1200px) {
   .menu--boton {
     display: block;
   }
@@ -488,6 +494,50 @@ input {
   }
   .main--txt {
     width: 100%;
+  }
+  .MySkills {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 33% 33% 33%;
+        grid-template-columns: 33% 33% 33%;
+    -ms-grid-rows: 200px 200px 200px;
+        grid-template-rows: 200px 200px 200px;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+  }
+  .grid--myprojects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+    justify-items: center;
+  }
+  .myprojects--div {
+    width: 230px;
+    height: 150px;
+  }
+  .proyecto1 img {
+    width: 230px;
+    height: 150px;
+  }
+  .myskill--div9 {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  .myprojects--div {
+    width: 380px;
+    height: 250px;
+  }
+  .proyecto1 img {
+    width: 380px;
+    height: 250px;
+  }
+  .myskill--div9 {
+    margin-top: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
