@@ -5,7 +5,7 @@ body {
 }
 
 .nav {
-  background-color: #d83e3e;
+  background-color: #0169f0;
   width: 100%;
   height: 50px;
   display: -webkit-box;
@@ -27,6 +27,8 @@ body {
 
 .nav--div h2 {
   margin: 0;
+  margin-left: 1rem;
+  color: #ffffff;
 }
 
 .nav--div2 {
@@ -42,14 +44,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #3497fa;
 }
 
 .div2--a {
   height: 100%;
   width: 100%;
   text-decoration: none;
-  color: black;
+  color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +62,7 @@ body {
 }
 
 .div2--a:hover {
-  background-color: #0169f0;
+  background-color: #0115ca;
 }
 
 .menu--boton {
@@ -74,7 +75,7 @@ body {
   top: 0;
   right: 0;
   border: none;
-  background-color: #d83e3e;
+  background-color: #0169f0;
   display: none;
 }
 
@@ -90,7 +91,7 @@ body {
 .main--img {
   height: 100%;
   width: 40%;
-  background-color: #0169f0;
+  background-color: #0115ca;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -99,7 +100,7 @@ body {
 .img {
   height: 400px;
   width: 400px;
-  background-color: aqua;
+  background-image: url(/Images/paraporto.jpg);
   border: 5px white solid;
   border-radius: 200px;
   margin: auto;
@@ -120,16 +121,22 @@ body {
 .txt {
   height: 300px;
   width: 90%;
-  background-color: aqua;
+  background-color: #0169f0;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;
 }
 
+.txt p {
+  color: #ffffff;
+  padding: 10px;
+  margin: 5px;
+}
+
 .cv {
   width: 40%;
   height: 80px;
-  background-color: aqua;
+  background-color: #0115ca;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -143,7 +150,7 @@ body {
 
 .encontrame {
   width: 60%;
-  background-color: aquamarine;
+  background-color: #0115ca;
   right: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -160,6 +167,7 @@ body {
 .parrafo-encontrame {
   margin-top: 5px;
   margin-bottom: 10px;
+  color: #ffffff;
 }
 
 .links {
@@ -168,7 +176,7 @@ body {
   height: 40px;
   margin-left: 10px;
   border: none;
-  background-color: aquamarine;
+  background-color: #0115ca;
   cursor: pointer;
 }
 
@@ -209,7 +217,7 @@ body {
 .cv button {
   height: 50px;
   width: 120px;
-  background-color: #00004e;
+  background-color: #1010b3;
   border: none;
   color: white;
   border-radius: 100px;
@@ -227,7 +235,7 @@ body {
 .myskills--h {
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .MySkills {
@@ -237,13 +245,16 @@ body {
   height: max-content;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 33% 33% 33%;
-      grid-template-columns: 33% 33% 33%;
-  -ms-grid-rows: 200px 200px;
-      grid-template-rows: 200px 200px;
+  -ms-grid-columns: 200px 200px 200px 200px;
+      grid-template-columns: 200px 200px 200px 200px;
+  -ms-grid-rows: 160px 160px;
+      grid-template-rows: 160px 160px;
   -ms-flex-line-pack: center;
       align-content: center;
-  margin-top: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 0.5rem;
 }
 
 .myskill--div {
@@ -303,12 +314,7 @@ body {
   background-position: center;
 }
 
-/*.myskill--div9{
-  background-image: url(../Icons/react.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-.myskill--div7, .myskill--div8, .myskill--div9 {
+.myskill--div7, .myskill--div8 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -338,6 +344,7 @@ body {
 }
 
 .myprojects {
+  margin-top: 3rem;
   width: 100%;
   height: -webkit-max-content;
   height: -moz-max-content;
@@ -408,6 +415,8 @@ body {
 .proyecto2--op p {
   color: aliceblue;
   padding: 20px;
+  -ms-user-select: none;
+      user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
@@ -505,7 +514,7 @@ input {
 
 .footer {
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: grey;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -519,12 +528,25 @@ input {
 @media screen and (max-width: 1200px) {
   .menu--boton {
     display: block;
+    cursor: pointer;
   }
   .img {
     height: 300px;
     width: 300px;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-position: bottom;
+  }
+  .txt {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .cv {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .nav--div2 {
     display: none;

@@ -1,3 +1,4 @@
+@import "variable";
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -5,7 +6,7 @@ body {
   }
   
   .nav {
-    background-color: rgb(216, 62, 62);
+    background-color: $color-principal;
     width: 100%;
     height: 50px;
     display: flex;
@@ -17,6 +18,8 @@ body {
   }
   .nav--div h2{
     margin: 0;
+    margin-left: 1rem;
+    color: $color-textob;
   }
   .nav--div2{
     height: 100%;
@@ -24,19 +27,18 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    background-color: rgb(52, 151, 250);
   }
   .div2--a{
     height: 100%;
     width: 100%;
     text-decoration: none;
-    color: black; 
+    color: $color-textob; 
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
   .div2--a:hover{
-    background-color: rgb(1, 105, 240);
+    background-color: $color-secundario;
   }
   .menu--boton{
     height: 50px;
@@ -48,7 +50,7 @@ body {
     top: 0;
     right: 0;
     border: none;
-    background-color: rgb(216, 62, 62);
+    background-color: $color-principal;
     display: none;
   }
   
@@ -62,19 +64,19 @@ body {
 .main{
   height: 500px;
   width: 100%;
-  background-color: rgb(1, 21, 202);
+  background-color:$color-secundario;
   display: flex;
 }
 .main--img{
   height: 100%;
   width: 40%;
-  background-color: rgb(1, 105, 240);
+  background-color: $color-secundario;
   display: flex;
 }
 .img{
   height: 400px;
   width: 400px;
-  background-color: aqua;
+  background-image: url(/Images/paraporto.jpg);
   border: 5px white solid;
   border-radius: 200px;
   margin: auto;
@@ -88,22 +90,27 @@ body {
 .txt{
   height: 300px;
   width: 90%;
-  background-color: aqua;
+  background-color: $color-principal;
   margin: auto;
   margin-bottom: 20px;
   margin-top: 20px;  
 }
+.txt p{
+  color: $color-textob;
+  padding: 10px;
+  margin: 5px;
+}
 .cv{
   width: 40%;
   height: 80px;
-  background-color: aqua;
+  background-color: $color-secundario;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
 .encontrame{
   width: 60%;
-  background-color: aquamarine;
+  background-color: $color-secundario;
   right: 0;
   display: flex;
   flex-direction: column;
@@ -112,6 +119,7 @@ body {
 .parrafo-encontrame{
   margin-top: 5px;
   margin-bottom: 10px;
+  color: $color-textob;
 }
 .links{
   text-decoration:none;
@@ -119,7 +127,7 @@ body {
   height: 40px;
   margin-left: 10px;
   border: none;
-  background-color: aquamarine;
+  background-color: $color-secundario;
   cursor: pointer;
 }
 .Instagram{
@@ -149,7 +157,7 @@ body {
 .cv button{
   height: 50px;
   width: 120px;
-  background-color: rgb(0, 0, 78);
+  background-color: rgb(16, 16, 179);
   border: none;
   color: white;
   border-radius: 100px;
@@ -174,16 +182,17 @@ body {
 .myskills--h{
   margin-top: 20px;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .MySkills{
   width: 100%;
   height: max-content;
   display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 200px 200px;
+  grid-template-columns: 200px 200px 200px 200px;
+  grid-template-rows: 160px 160px;
   align-content: center;
-  margin-top: 20px;
+  justify-content:space-between;
+  margin-top: 0.5rem;
 }
 .myskill--div{
   height: 180px;
@@ -231,12 +240,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-/*.myskill--div9{
-  background-image: url(../Icons/react.png);
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
-.myskill--div7,.myskill--div8,.myskill--div9{
+.myskill--div7,.myskill--div8{
   display: flex;
   justify-content: center;
 }
@@ -261,6 +265,7 @@ body {
 
 //Realizando la parte de proyectos
 .myprojects{
+  margin-top: 3rem;
   width: 100%;
   height: max-content;
 }
@@ -311,6 +316,7 @@ body {
 .proyecto2--op p{
   color: aliceblue;
   padding: 20px;
+  user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
@@ -392,7 +398,7 @@ input{
 //Realizando la parte del footer
 .footer{
   width: 100%;
-  height: 50px;
+  height: 60px;
   background-color: grey;
   display: flex;
 }
@@ -408,12 +414,20 @@ input{
 @media screen and (max-width:"1200px") {
   .menu--boton{
     display: block;
+    cursor: pointer;
   }
   .img{
     height: 300px;
     width: 300px;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-position: bottom;
+  }
+  .txt{
+    height: max-content;
+  }
+  .cv{
+    flex-direction: column;
   }
   .nav--div2{
     display: none;
