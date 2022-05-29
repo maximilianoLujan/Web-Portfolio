@@ -1,9 +1,15 @@
 const $botonmenu = document.querySelector(".menu--boton"); 
-const $mimenu = document.querySelector(".menu"); 
-console.log($mimenu)
+const $mimenu = document.querySelector(".menu");
+const $botoncerrar = document.querySelector(".cerrar--boton")
 function funcionBoton(){
     $mimenu.style.display = "block";
-    document.body.after($mimenu);
+    $botonmenu.style.display ="none";
+    $botoncerrar.style.display ="block";
+}
+function funcionCerrar(){
+    $mimenu.style.display = "none";
+    $botoncerrar.style.display ="none";
+    $botonmenu.style.display ="block";
 }
 $botonmenu.addEventListener("click",funcionBoton);
-document.body.append($mimenu)
+$botoncerrar.addEventListener("click",funcionCerrar);

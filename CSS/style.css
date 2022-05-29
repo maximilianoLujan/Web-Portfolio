@@ -79,6 +79,21 @@ body {
   display: none;
 }
 
+.cerrar--boton {
+  height: 50px;
+  width: 50px;
+  background-image: url(../Icons/cerrar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: #3c4746;
+  display: none;
+  cursor: pointer;
+}
+
 .menu {
   background-color: #3c4746;
   position: absolute;
@@ -86,6 +101,12 @@ body {
   height: 100%;
   text-align: center;
   display: none;
+  padding-top: 2rem;
+}
+
+.menu h4 {
+  cursor: pointer;
+  margin: 8rem;
 }
 
 .main {
