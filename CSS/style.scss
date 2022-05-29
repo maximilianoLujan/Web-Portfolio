@@ -53,13 +53,18 @@ body {
     background-color: $color-principal;
     display: none;
   }
+  .menu{
+    background-color: $color-menu;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: none;
+  }
   
+
+
   
-
-
-
-
-
 //Realizando la parte del main
 .main{
   height: 500px;
