@@ -5,14 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css">
     <title>Front-End Developer</title>
 </head>
 <body>
+    <button class="mi-boton hamburger hamburger--spin" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     <div class="menu">
-        <h4>About Me</h4>
-        <h4>My Skills</h4>
-        <h4>My projects</h4>
-        <h4>Contact Me</h4>
+        <a href="">About Me</a>
+        <a href="">My Skills</a>
+        <a href="">My Projects</a>
+        <a href="">Contact Me</a>
     </div>
     <header class="nav">
         <div class="nav--div">
@@ -24,8 +30,6 @@
             <a class="div2--a" href="#projects">My Projects</a>
             <a class="div2--a" href="#contactme">Contact Me</a>
         </div>
-        <button class="menu--boton"></button>
-        <button class="cerrar--boton"></button>
     </header>
     <main id="main" class="main">
         <div class="main--img">
@@ -35,7 +39,7 @@
         </div>
         <div class="main--txt">
             <div class="txt">
-                <p>Hi, my name is Maximiliano Lujan, I'm 20 years old.</p>
+                <p>Hi, my name is Maximiliano Lujan, I'm 21 years old.</p>
                 <p>I 
                     study systems engineering in unicen, tandil, province of buenos aires, argentina. I am currently in my third year</p>
                 <p>
@@ -55,19 +59,46 @@
                 <div class="encontrame">
                     <p class="parrafo-encontrame">You can find me on:</p>
                     <div>
-                        <button class="links linkedln"></button>
-                        <button class="links github"></button>
-                        <button class="links twitter"></button>
-                        <button class="links instagram"></button>
+                        <button class="linkedln links"></button>
+                        <button class="github links"></button>
+                        <button class="twitter links"></button>
+                        <button class="instagram links"></button>
                     </div>
                 </div>
             </div>
             
         </div>
     </main>
+    <div class="misproyectos">
+        <div class="misproyectos--txt">
+            <h2>My Projects</h2>
+        </div>
+        <div class="misproyectos--proy">
+            <div class="proy--p">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="proy--p">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="proy--p">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <div class="proy--p">
+                <div>
+                    <img src="" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 </style> 
-<script src="javascript/index.js"></script>
+<script type="module" src="javascript/index.js"></script>
 </html>

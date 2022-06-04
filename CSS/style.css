@@ -69,48 +69,56 @@ body {
   background-color: #0115ca;
 }
 
-.menu--boton {
-  height: 50px;
-  width: 50px;
-  background-image: url(../Icons/menus.png);
-  background-repeat: no-repeat;
-  background-position: center;
+.mi-boton {
   position: absolute;
   top: 0;
   right: 0;
-  border: none;
-  background-color: #0169f0;
-  display: none;
-}
-
-.cerrar--boton {
-  height: 50px;
-  width: 50px;
-  background-image: url(../Icons/cerrar.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  top: 0;
-  right: 0;
-  border: none;
-  background-color: #3c4746;
-  display: none;
-  cursor: pointer;
+  z-index: 999;
+  -webkit-transform: translate(0, -100%);
+          transform: translate(0, -100%);
 }
 
 .menu {
-  background-color: #3c4746;
+  background-color: #0169f0;
   position: absolute;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
-  display: none;
-  padding-top: 2rem;
+  -webkit-transition: -webkit-transform 1.5s ease;
+  transition: -webkit-transform 1.5s ease;
+  transition: transform 1.5s ease;
+  transition: transform 1.5s ease, -webkit-transform 1.5s ease;
+  -webkit-transform: translate(-100%, 0);
+          transform: translate(-100%, 0);
 }
 
-.menu h4 {
-  cursor: pointer;
-  margin: 8rem;
+.is-active {
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.menu a {
+  width: 100%;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+}
+
+.menu a:hover {
+  color: white;
 }
 
 .main {
@@ -251,7 +259,7 @@ body {
 .cv button {
   height: 50px;
   width: 120px;
-  background-color: #1010b3;
+  background-color: black;
   border: none;
   color: white;
   border-radius: 100px;
@@ -266,10 +274,46 @@ body {
   font-size: medium;
 }
 
+.misproyectos {
+  background-color: #0169f0;
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin: 0;
+}
+
+.misproyectos--proy {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  justify-items: center;
+}
+
+.misproyectos h2 {
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+
+.proy--p {
+  width: 35rem;
+  height: 20rem;
+  margin: 2rem;
+  background-color: #0115ca;
+}
+
 @media screen and (max-width: 1200px) {
-  .menu--boton {
-    display: block;
-    cursor: pointer;
+  .mi-boton {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
   .img {
     height: 300px;

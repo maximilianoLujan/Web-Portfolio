@@ -43,45 +43,37 @@ body {
   .div2--a:hover{
     background-color: $color-secundario;
   }
-  .menu--boton{
-    height: 50px;
-    width: 50px;
-    background-image: url(../Icons/menus.png);
-    background-repeat: no-repeat;
-    background-position: center;
+  .mi-boton{
     position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    background-color: $color-principal;
-    display: none;
-  }
-  .cerrar--boton{
-    height: 50px;
-    width: 50px;
-    background-image: url(../Icons/cerrar.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: none;
-    background-color: $color-menu;
-    display: none;
-    cursor: pointer;
+    top:0;
+    right:0;
+    z-index: 999;
+    transform: translate(0,-100%);
   }
   .menu{
-    background-color: $color-menu;
+    background-color: $color-principal;
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     text-align: center;
-    display: none;
-    padding-top: 2rem;
+    transition: transform 1.5s ease;
+    transform: translate(-100%,0);
   }
-  .menu h4{
-    cursor: pointer;
-    margin: 8rem;
+  .is-active{
+    transform: translate(0,0);
+  }
+  .menu a{
+    width: 100%;
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+  }
+  .menu a:hover{
+    color: white;
   }
   
 
@@ -184,7 +176,8 @@ body {
 .cv button{
   height: 50px;
   width: 120px;
-  background-color: rgb(16, 16, 179);
+  background-color: rgb(0, 0, 0);
+  //background-color: rgb(16, 16, 179);
   border: none;
   color: white;
   border-radius: 100px;
@@ -203,11 +196,44 @@ body {
 
 
 
+//Realizando la parte de mis proyectos
+.misproyectos{
+  background-color: $color-principal;
+  width: 100%;
+  height: max-content;
+  margin: 0;
+}
+.misproyectos--txt{
+  
+}
+.misproyectos--proy{
+  width: 100%;
+  height: max-content;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  justify-items:center;
+}
+.misproyectos h2{
+  padding: 1rem 0;
+  margin: 0;
+  text-align: center;
+}
+.proy--p{
+  width: 35rem;
+  height: 20rem;
+  margin: 2rem;
+  background-color: $color-secundario;
+}
+
+
+
+
+
 //Para el mobile
 @media screen and (max-width:"1200px") {
-  .menu--boton{
-    display: block;
-    cursor: pointer;
+  .mi-boton{
+    transform: translate(0,0);
   }
   .img{
     height: 300px;
